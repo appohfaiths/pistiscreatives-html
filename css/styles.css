@@ -186,5 +186,44 @@ h3 {
      .menu-btn:hover {
          opacity: 0.65;
      }
+     .nav-menu {
+         display: block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         background: #f2f2f2;
+         width: 50%;
+         height: 100%;
+         padding: 30px;
+         border-right: 1px solid #ccc;
+         opacity: 0.93;
+         transform: translateX(-500px);
+         transition: transform 0.3s ease-in-out;
+     }
+     .nav-menu.show {
+         transform: translateX(-20px);
+     }
 
+     .nav-menu li {
+         padding: 10px;
+         border-bottom: 1px solid #ccc;
+     }
+
+     .nav-menu li:last-child {
+         border-bottom: 0;
+     }
+
+     .showcase {
+         flex-direction: column;
+     }
+
+     .web-creations, .art-creations {
+         grid-template-columns: repeat(2, 1fr);
+     }
+ }
+
+ @media (max-width: 500px) {
+     .web-creations, .art-creations {
+         grid-template-columns: 1fr;
+     }
  }

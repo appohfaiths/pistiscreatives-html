@@ -1,3 +1,4 @@
+//Buttons
 document.querySelector('.menu-btn').addEventListener('click', () => {
-  document.querySelector('.main-menu').classList.toggle('show');
+  document.querySelector('.nav-menu').classList.toggle('show');
 });
